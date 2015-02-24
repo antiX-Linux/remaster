@@ -28,6 +28,15 @@ export ControlCenter=$(cat <<End_of_Text
 		<hbox>
 		  <button>
 		  <input file>"$ICONS/palimpsest.png"</input>
+		  <action>persist-config &</action>
+		  </button>
+		  <text use-markup="true" width-chars="25">
+		  <label>"`gettext $"Configure live persistence"`"</label>
+		  </text>
+		</hbox>
+                <hbox>
+		  <button>
+		  <input file>"$ICONS/palimpsest.png"</input>
 		  <action>persist-save &</action>
 		  </button>
 		  <text use-markup="true" width-chars="25">

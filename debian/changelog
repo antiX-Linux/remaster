@@ -1,0 +1,193 @@
+remaster-antix (0.3.10) unstable; urgency=low
+ 
+  * Remove halt,reboot symlinks and xfce4-session-logout.
+  * Updated persistence scripts to match upstream changes (BitJam)
+
+ -- anticapitalista <antiX@operamail.com>  Tue, 17 Feb 2015 14:32:00 +0200
+
+
+remaster-antix (0.3.9) unstable; urgency=low
+ 
+  * Corrected .desktop icon path
+
+ -- anticapitalista <antiX@operamail.com>  Mon, 02 Feb 2015 18:47:00 +0200
+
+
+remaster-antix (0.3.8) unstable; urgency=low
+ 
+  * New icon theme
+
+ -- anticapitalista <antiX@operamail.com>  Sat, 27 Dec 2014 14:52:00 +0200
+
+
+remaster-antix (0.3.7) unstable; urgency=low
+ 
+  * Added progress bars to persist-makefs.
+
+ -- anticapitalista <antiX@operamail.com>  Sat, 26 Apr 2014 23:45:00 +0200
+
+
+remaster-antix (0.3.6) unstable; urgency=low
+ 
+  * Added persist-save --quiet to persist-config.
+
+ -- anticapitalista <antiX@operamail.com>  Wed, 16 Apr 2014 18:20:00 +0200
+
+
+remaster-antix (0.3.5) unstable; urgency=low
+ 
+  * Added more feedback to persist-config.
+  * Added persist-config to remastercc.sh.
+
+ -- anticapitalista <antiX@operamail.com>  Wed, 02 Apr 2014 21:10:00 +0200
+
+
+remaster-antix (0.3.4) unstable; urgency=low
+ 
+  * Packaged using dpkg-buildpackage.
+  * xz compressed deb.
+
+ -- anticapitalista <antiX@operamail.com>  Fri, 19 Oct 2013 13:10:00 +0200
+
+
+remaster-antix (0.3.3) unstable; urgency=low
+ 
+  * Changed ownership to root;root.
+
+ -- anticapitalista <antiX@operamail.com>  Thu, 06 June 2013 10:10:00 +0200
+
+
+remaster-antix (0.3.2) unstable; urgency=low
+ 
+  * Edits to persist-config.
+
+ -- anticapitalista <antiX@operamail.com>  Wed, 01 May 2013 14:10:00 +0200
+
+
+remaster-antix (0.3.1) unstable; urgency=low
+ 
+  * Added localisation.
+
+ -- anticapitalista <antiX@operamail.com>  Sun, 27 January 2013 23:40:00 +0200
+
+
+remaster-antix (0.3.0) unstable; urgency=low
+ 
+  * Removed fs-make, make-fs and make-rootfs. No longer required.
+  * Renamed remaster-me to remaster-live.
+  * Renamed locale files for remaster-me/remaster-live.
+
+ -- anticapitalista <antiX@operamail.com>  Wed, 12 December 2012 23:40:00 +0200
+
+
+remaster-antix (0.2.1) unstable; urgency=low
+ 
+  * gksu replaces ktsuss.
+
+ -- anticapitalista <antiX@operamail.com>  Fri, 26 October 2012 15:10:00 +0200
+
+remaster-antix (0.2.0) unstable; urgency=low
+ 
+  * ktsuss replaces gksu.
+
+ -- anticapitalista <antiX@operamail.com>  Sat, 13 October 2012 17:50:00 +0200
+
+
+remaster-antix (0.1.8.1) unstable; urgency=low
+ 
+  * Fixed bug in persist-save.
+  * Fixed bug in remaster-me.
+
+ -- anticapitalista <antiX@operamail.com>  Sat, 06 October 2012 11:20:00 +0200
+
+
+remaster-antix (0.1.8.0) unstable; urgency=low
+ 
+  * Fixed ownership bug.
+
+ -- anticapitalista <antiX@operamail.com>  Sun, 26 August 2012 15:40:00 +0200
+
+
+remaster-antix (0.1.7.9) unstable; urgency=low
+ 
+  * Added copyright notice.
+
+ -- anticapitalista <antiX@operamail.com> Mon, 16 July 2012 15:30:00 +0200
+
+
+remaster-antix (0.1.7.8) unstable; urgency=low 
+ 
+  * Altered for /bin/bash.
+
+ -- anticapitalista <antiX@operamail.com>  Tues, 10 July 2012 18:30:00 +0200
+
+
+remaster-antix (0.1.7.7) unstable; urgency=low 
+ 
+  * Added 2 text lines to remaster-me to set up rootfs.new.
+
+ -- anticapitalista <antiX@operamail.com>  Mon, 25 June 2012 20:30:00 +0200
+
+
+remaster-antix (0.1.7.6) unstable; urgency=low 
+ 
+  * Added Dutch localisation.
+
+ -- anticapitalista <antiX@operamail.com>  Tue, 22 May 2012 18:00:00 +0200
+
+
+remaster-antix (0.1.7.5) unstable; urgency=low 
+ 
+  * Added localisation.
+
+ -- anticapitalista <antiX@operamail.com>  Wed, 25 April 2012 19:00:00 +0200
+
+
+remaster-antix (0.1.7.4) unstable; urgency=low 
+ 
+  * Newer persist-makefs script.
+
+ -- anticapitalista <antiX@operamail.com>  Sun, 08 April 2012 19:00:00 +0200
+
+
+remaster-antix (0.1.7.3) unstable; urgency=low 
+ 
+  * New persist-makefs script.
+
+ -- anticapitalista <antiX@operamail.com>  Sun, 01 April 2012 19:00:00 +0200
+
+
+remaster-antix (0.1.7.2) unstable; urgency=low 
+ 
+  * Bug fix or remaster-me script.
+
+ -- anticapitalista <antiX@operamail.com>  Sun, 11 March 2012 19:00:00 +0200
+
+
+remaster-antix (0.1.7.1) unstable; urgency=low 
+ 
+  * Chnaged label names, removed gksu in script as gksu is in .desktop file.
+
+ -- anticapitalista <antiX@operamail.com>  Fri, 09 March 2012 13:00:00 +0200
+
+
+remaster-antix (0.1.7) unstable; urgency=low 
+ 
+  * Added persistence files from live-init.
+
+ -- anticapitalista <antiX@operamail.com>  Mon, 09 January 2012 11:30:00 +0200
+
+
+remaster-antix (0.1.5) unstable; urgency=low 
+ 
+  * Internationalisation of scripts.
+
+ -- anticapitalista <antiX@operamail.com>  Mon, 02 January 2012 15:30:00 +0200
+
+
+remaster-antix (0.1.0) unstable; urgency=low 
+ 
+  * Initial Release.
+
+ -- anticapitalista <antiX@operamail.com>  Sun, 20 November 2011 15:30:00 +0200
+

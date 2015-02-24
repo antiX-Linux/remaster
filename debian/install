@@ -1,0 +1,5 @@
+RemasterCC.desktop   /usr/share/applications/antix
+locale/*             /usr/share/locale 
+changelog.gz         /usr/share/doc/remaster-antix
+copyright            /usr/share/doc/remaster-antix
+bin/*                /usr/local/bin 
