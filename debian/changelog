@@ -1,3 +1,27 @@
+remaster-antix (0.4.2) unstable; urgency=low
+ 
+  * Always exclude the basename of BIND_DIR
+
+ -- anticapitalista <antiX@operamail.com>  Wed, 10 Jun 2015 11:41:00 +0200
+
+
+remaster-antix (0.4.1) unstable; urgency=low
+ 
+  * Re-enable self-lockout (for MX mostly) 
+  * Use timeout_box() to display the --quiet success message 
+
+ -- anticapitalista <antiX@operamail.com>  Sun, 07 Jun 2015 22:17:00 +0200
+
+
+remaster-antix (0.4.0) unstable; urgency=low
+ 
+  * Prepare for antiX-15.
+  * commit 6e1feab72e88a85a40634a9c8e57d168e7774fa7 fixes
+  * Removed remastercc.sh at its translations - no longer needed
+
+ -- anticapitalista <antiX@operamail.com>  Sat, 25 Apr 2015 11:47:00 +0200
+
+
 remaster-antix (0.3.10) unstable; urgency=low
  
   * Remove halt,reboot symlinks and xfce4-session-logout.

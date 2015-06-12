@@ -145,12 +145,19 @@ main() {
 
     restore_live
 
+    #-jbb if [ "$AUFS_MP" ] && which auplink &>/dev/null; then
+    #-jbb     local t0=$(get_time)
+    #-jbb     qmsg ">> aplink $AUFS_MP flush"
+    #-jbb     auplink $AUFS_MP flush
+    #-jbb     local elapsed=$(elapsed $t0)
+    #-jbb     qmsg "<< took $elapsed"
+    #-jbb fi
+
     #--- now do the rsync
-    rsync -a $rsync_opts
-
+    time_cmd_quiet rsync -a $rsync_opts
     rsync_ret=$?
-
-    #rsync_ret=17
+    # sync now because we are about to umount
+    sync
 
     full_rootfs=$(all_space  $ROOTFS_MP)
     used_rootfs=$(used_space $ROOTFS_MP)
@@ -168,9 +175,7 @@ main() {
         ""
 
     if [ "$SET_QUIET" ]; then
-        #pfgt $TITLE_COLOR"%s succeeded"$NO_COLOR $ME
-        pfgt "%s succeeded" $ME
-        echo
+        timeout_box 2 "$(pfgt "%s succeeded" $ME)"
         exit 0
     fi
 
@@ -191,7 +196,7 @@ main() {
 get_vid() { [ -r "$1" ] && grep ^=== $1 | tail -n 1   ;}
 
 check_vid() {
-    local rootfs_mp=$1 linuxfs_mp=${2:-/live/linux}
+    local rootfs_mp=$1 linuxfs_mp=${2:-$LIVE_DIR/linux}
     local linuxfs_vf=$linuxfs_mp/etc/live/version/linuxfs.ver
     test -e $linuxfs_vf || return 0
     local linuxfs_vid=$(get_vid $linuxfs_vf)
