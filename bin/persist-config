@@ -147,17 +147,19 @@ elif [ "$SET_SHUT_DOWN" ]; then
         edit_config
     fi
 
-    if test -r $last_as_file; then
-        prev=$(cat $last_as_file)
-        diff=$(($(date +%s) - $prev))
+    now=$(date +%s)
+    for file in $last_as_file $last_ps_file; do
+        test -r $file || continue
+        read prev 2>/dev/null < $file
+        diff=$(( $now - $prev))
         if [ $diff -le $LOCKOUT_TIME ]; then
             timeout_box 2 \
-                "$(pfgt "Already autosaved less then %s seconds ago" $diff)" \
-                "Won't autosave again"
+                "$(pfgt "Already saved less than %s seconds ago" $diff)" \
+                "$(pfgt "Won't autosave within %s seconds of a previous save" $LOCKOUT_TIME)"
 
             exit_command
         fi
-    fi
+    done
 
     source $CONF_FILE
 
@@ -178,12 +180,16 @@ elif [ "$SET_SHUT_DOWN" ]; then
 
     rm -f $last_ps_file
 
-    # ALWAYS say we did an autosave even if it failed or was aborted
-    date +%s > $last_as_file
-
     vmsg "running perist-save $persist_opts"
 
-    persist-save $persist_opts 2>&1 && exit_command
+    persist-save $persist_opts 2>&1
+    ret=$?
+
+    # ALWAYS say we did an autosave even if it failed or was aborted
+    # Do it *after* running persist-save in case it takes time
+    date +%s > $last_as_file
+
+    [ $ret -eq 0 ] && exit_command
 
     # Only get here if persist-save exited abnormally
     [ "$OPT_COMMAND" ] || exit 0

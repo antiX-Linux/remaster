@@ -9,6 +9,7 @@ antiX_lib=/usr/local/lib/antiX
 
 #source $antiX_lib/antiX-get-param.sh
 source $antiX_lib/antiX-common.sh     "$@"
+last_ps_file=$LIVE_DIR/config/last-persist-save
 
 TITLE="$(gt "antiX Save Persistent Root")"
 
@@ -38,6 +39,10 @@ main() {
     # First make sure script is run as root.
     need_root
     start_logging
+
+    noisy_yes_no_box                              \
+        "$(gt "Shall we begin?")"                 \
+        || vexit "Stopping at user's request"
 
     trap clean_up EXIT
     create_lock
@@ -178,6 +183,8 @@ main() {
         timeout_box 2 "$(pfgt "%s succeeded" $ME)"
         exit 0
     fi
+
+    date +%s > $last_ps_file
 
     info_box                                              \
         "$(pfgt "%s succeeded" $ME)"                      \
