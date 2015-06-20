@@ -1,3 +1,10 @@
+remaster-antix (0.4.3) unstable; urgency=low
+ 
+  * Use -c /dev/null when running blkid to find persist-device
+
+ -- anticapitalista <antiX@operamail.com>  Fri, 19 Jun 2015 22:37:00 +0200
+
+
 remaster-antix (0.4.2) unstable; urgency=low
  
   * Always exclude the basename of BIND_DIR
