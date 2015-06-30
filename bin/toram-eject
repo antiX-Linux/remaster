@@ -23,18 +23,22 @@ read_conf -q
 vmsg "BOOT_DEV=$BOOT_DEV";
 [ "$BOOT_DEV" ] || error_box "$(gt "no BOOT_DEV given!")"
 
+flag_file=$LIVE_DIR/config/toram-eject
+test -e $flag_file || vexit "No $flag_file config file"
+rm -f $flag_file
+
 # Only eject removable media
 case "$BOOT_DEV" in
     /dev/sr[0-9]*) ;;
                 *) vexit "boot device: %s is not removable." "[f]$BOOT_DEV[/]" ;;
 esac
 
-grep -q "^$BOOT_DEV " /proc/mounts && umount $BOOT_DEV
+#grep -q "^$BOOT_DEV " /proc/mounts && umount $BOOT_DEV
 
 grep -q "^$BOOT_DEV " /proc/mounts \
     && vexit "boot device: %s is still mounted!" "[f]$BOOT_DEV[/]"
 
-show_cli_title
+#show_cli_title
 
 yes_no_box -c                                                \
     "$TITLE"                                                 \

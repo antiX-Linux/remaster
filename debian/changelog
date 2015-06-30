@@ -1,3 +1,17 @@
+remaster-antix (0.4.5) unstable; urgency=low
+ 
+  * Fix for broken toram-eject
+
+ -- anticapitalista <antiX@operamail.com>  Mon, 29 Jun 2015 23:49:00 +0200
+
+
+remaster-antix (0.4.4) unstable; urgency=low
+ 
+  * Updated Italian
+
+ -- anticapitalista <antiX@operamail.com>  Mon, 29 Jun 2015 14:32:00 +0200
+
+
 remaster-antix (0.4.3) unstable; urgency=low
  
   * Use -c /dev/null when running blkid to find persist-device
