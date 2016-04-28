@@ -1,6 +1,4 @@
 locale/*             /usr/share/locale 
-changelog.gz         /usr/share/doc/remaster-antix
-copyright            /usr/share/doc/remaster-antix
 bin/*                /usr/local/bin 
 installed-to-live    /usr/sbin
 live-files/*         /usr/local/share/live-files

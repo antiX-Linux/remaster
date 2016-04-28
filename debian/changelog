@@ -1,3 +1,38 @@
+remaster-antix (0.5.4) unstable; urgency=medium
+
+  * Fix check_vid()
+  * Change BIND_ROOT from /etc/live/.bind to /live/.bind  
+
+ -- anticapitalista <antix@operamail.com>  Sun, 24 Apr 2016 13:47:08 +0300
+
+remaster-antix (0.5.3) unstable; urgency=medium
+
+  * removed xfce4-session-logout
+  * removed issue file
+
+ -- anticapitalista <antix@operamail.com>  Fri, 22 Apr 2016 14:17:55 +0300
+
+remaster-antix (0.5.2) unstable; urgency=medium
+
+  * Fixed typos in live-remaster
+  * Improved translations 
+
+ -- anticapitalista <antix@operamail.com>  Mon, 04 Apr 2016 14:22:10 +0300
+
+remaster-antix (0.5.1) unstable; urgency=low
+ 
+  * BitJam bug fixes
+
+ -- anticapitalista <antiX@operamail.com>  Fri, 18 Mar 2016 19:21:00 +0200
+
+
+remaster-antix (0.5.0) unstable; urgency=low
+ 
+  * update to MX-15 version
+
+ -- anticapitalista <antiX@operamail.com>  Tue, 29 Dec 2015 14:16:00 +0200
+
+
 remaster-antix (0.4.5) unstable; urgency=low
  
   * Fix for broken toram-eject
