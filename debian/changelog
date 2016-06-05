@@ -1,3 +1,27 @@
+remaster-antix (0.5.8) unstable; urgency=medium
+
+  * update live-files 
+
+ -- anticapitalista <antix@operamail.com>  Sun, 05 Jun 2016 11:35:52 +0300
+
+remaster-antix (0.5.7) unstable; urgency=medium
+
+  * Updated translations 
+
+ -- anticapitalista <antix@operamail.com>  Mon, 30 May 2016 18:56:27 +0300
+
+remaster-antix (0.5.6) unstable; urgency=medium
+
+  * New initrd.d files 
+
+ -- anticapitalista <antix@operamail.com>  Thu, 26 May 2016 18:15:57 +0300
+
+remaster-antix (0.5.5) unstable; urgency=medium
+
+  * Add mmcblk devices to fstab (as well as sd and sr)  
+
+ -- anticapitalista <antix@operamail.com>  Sun, 22 May 2016 18:05:34 +0300
+
 remaster-antix (0.5.4) unstable; urgency=medium
 
   * Fix check_vid()
