@@ -29,6 +29,7 @@
     [separator]
     [submenu] (Help) </usr/share/icons/Faenza-Cupertino-mini/apps/32/help-browser.png>
         [submenu] (antiX) </usr/share/icons/Faenza-Cupertino-mini/places/32/folder.png>
+            [exec] (antiX Videos) {dillo /usr/share/antiX/antix_help_videos.html}
             [exec] (antiX FAQ) {dillo /usr/share/antiX/FAQ/index.html}
             [exec] (antiX-live How-To) {dillo /usr/share/antiX/Boot_Menu/antiX-gfxboot.html}
             [separator]
@@ -71,5 +72,5 @@
         [restart] (Restart)
     [end]
     [exec] (Exit) {desktop-session-exit} </usr/share/icons/Faenza-Cupertino-mini/actions/32/application-exit.png>
-    [exec] (antiX Installer) {gksu antixsources.sh} </usr/share/icons/msystem.png>
+    [exec] (antiX Installer) {sudo antixsources.sh} </usr/share/icons/msystem.png>
 [end]

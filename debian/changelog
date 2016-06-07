@@ -1,3 +1,9 @@
+remaster-antix (0.5.9) unstable; urgency=medium
+
+  * Remove boot-log code from rc.local 
+
+ -- anticapitalista <antix@operamail.com>  Mon, 06 Jun 2016 11:28:45 +0300
+
 remaster-antix (0.5.8) unstable; urgency=medium
 
   * update live-files 

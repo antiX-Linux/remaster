@@ -11,7 +11,7 @@
     <Menu label="Applications" icon="/usr/share/icons/Faenza-Cupertino-mini/categories/32/applications-accessories.png">
         <Include>$HOME/.jwm/menu-applications</Include>
     </Menu>
-    <Program label="Update Menu" icon="/usr/share/icons/Faenza-Cupertino-mini/apps/32/update-manager.png">desktop-menu --write-out-global</Program>
+    <Program label="Update Menu" icon="/usr/share/icons/Faenza-Cupertino-mini/apps/32/update-manager.png">desktop-menu --write-out-global && jwm -restart</Program>
     <Separator/>
     <Menu label="Desktop" icon="/usr/share/icons/Faenza-Cupertino-mini/places/32/user-desktop.png">
         <Menu label="Other Desktops" icon="/usr/share/icons/Faenza-Cupertino-mini/places/32/user-desktop.png">
@@ -25,6 +25,7 @@
     <Separator/>
     <Menu label="Help" icon="/usr/share/icons/Faenza-Cupertino-mini/apps/32/help-browser.png">
         <Menu label="antiX" icon="/usr/share/icons/Faenza-Cupertino-mini/places/32/folder.png">
+            <Program label="antiX Video">dillo /usr/share/antiX/antix_help_videos.html</Program>
             <Program label="antiX FAQ">dillo /usr/share/antiX/FAQ/index.html</Program>
             <Program label="antiX-live How-To">dillo /usr/share/antiX/Boot_Menu/antiX-gfxboot.html</Program>
             <Separator/>
@@ -55,5 +56,5 @@
     <Program label="Run" icon="/usr/share/icons/Faenza-Cupertino-mini/actions/32/system-run.png">gexec</Program>
     <Separator/>
     <Include>$HOME/.jwm/themes-list</Include>
-    <Program label="antiX Installer" icon="/usr/share/icons/msystem.png">gksu antixsources.sh</Program>
+    <Program label="antiX Installer" icon="/usr/share/icons/msystem.png">sudo antixsources.sh</Program>
 </JWM>
