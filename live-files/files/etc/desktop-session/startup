@@ -19,8 +19,7 @@ automount-antix &
 
 # Create a bootchart image if bootchart was run
  (sleep 6 && test -e /var/log/bootchart.tgz && ! test -e ~/bootchart.png \
-     && pybootchartgui && (feh ~/bootchart.png &) \
-     && sleep 1 && roxterm -e man feh)&
+     && pybootchartgui)&
 
 # Used on live system only
 (sleep 5 && toram-eject) &

@@ -1,3 +1,9 @@
+remaster-antix (0.5.10) unstable; urgency=medium
+
+  * added the fdb+ feature back into rc.local
+
+ -- anticapitalista <antix@operamail.com>  Fri, 10 Jun 2016 14:09:07 +0300
+
 remaster-antix (0.5.9) unstable; urgency=medium
 
   * Remove boot-log code from rc.local 
