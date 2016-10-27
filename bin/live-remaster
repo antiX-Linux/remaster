@@ -68,7 +68,7 @@ prep_main() {
 main() {
     #--- Mount device holding linuxfs if needed
     mount_if_needed $BOOT_DEV $BOOT_MP
-    make_readwrite $BOOT_MP
+    make_readwrite $BOOT_MP 2 || error_box_pf "The live file system is read-only.  Cannot remaster."
 
     _General_="$(gt "General")"
     _Personal_="$(gt "Personal")"
@@ -457,11 +457,11 @@ finish_remaster() {
 
     mv $tmp_file $new_file
 
-    local_clean_up && trap EXIT
-
     qmsg 'Making md5 sum ...'
 
     cat $new_file | md5sum > $SQFILE_FULL.md5.new
+
+    local_clean_up && trap EXIT
 
     main_text=(
         "$(fmt_size "linuxfs size"  $sq_new_size)"

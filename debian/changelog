@@ -1,3 +1,10 @@
+remaster-antix (0.5.11) unstable; urgency=medium
+
+  * Many localisation updates
+  * Fix excludes bug caused by overlayfs upper/ directory 
+
+ -- anticapitalista <antix@operamail.com>  Thu, 27 Oct 2016 13:56:14 +0300
+
 remaster-antix (0.5.10) unstable; urgency=medium
 
   * added the fdb+ feature back into rc.local

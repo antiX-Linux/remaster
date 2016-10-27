@@ -1,7 +1,7 @@
 Source: remaster-antix
 Section: antiX
 Priority: required
-Maintainer: anticapitalista <antix@operamail.com>
+Maintainer: anticapitalista <antiX@operamail.com>
 Build-Depends: debhelper (>= 9.20120115)
 Standards-Version: 3.9.4
 Homepage: http://antix.mepis.org
