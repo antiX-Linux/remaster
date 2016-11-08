@@ -1,3 +1,9 @@
+remaster-antix (0.5.12) unstable; urgency=medium
+
+  * added /etc/grub.d/* files
+
+ -- anticapitalista <antix@operamail.com>  Tue, 08 Nov 2016 15:10:21 +0200
+
 remaster-antix (0.5.11) unstable; urgency=medium
 
   * Many localisation updates
