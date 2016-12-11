@@ -1,3 +1,27 @@
+remaster-antix (0.5.16) unstable; urgency=medium
+
+  * New files to initrd and grub live folders
+
+ -- anticapitalista <antix@operamail.com>  Fri, 09 Dec 2016 23:27:40 +0200
+
+remaster-antix (0.5.15) unstable; urgency=medium
+
+  * Catalan, French and Japenese improvements
+
+ -- anticapitalista <antix@operamail.com>  Fri, 02 Dec 2016 12:21:30 +0200
+
+remaster-antix (0.5.14) unstable; urgency=medium
+
+  * Improved kazakh translation
+
+ -- anticapitalista <antix@operamail.com>  Thu, 24 Nov 2016 13:31:44 +0200
+
+remaster-antix (0.5.13) unstable; urgency=medium
+
+  * Added Kazakh
+
+ -- anticapitalista <antix@operamail.com>  Thu, 17 Nov 2016 11:54:21 +0200
+
 remaster-antix (0.5.12) unstable; urgency=medium
 
   * added /etc/grub.d/* files
