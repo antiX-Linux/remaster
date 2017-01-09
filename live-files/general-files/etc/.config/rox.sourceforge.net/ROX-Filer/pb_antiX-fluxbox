@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<pinboard>
+  <backdrop style="Stretched">/usr/share/wallpaper/shells-massage-therapy-sand.jpg</backdrop>
+  <icon x="34" y="34" label="Files">/usr/share/applications/antix/file-manager.desktop</icon>
+  <icon x="34" y="112" label="Help">/usr/share/applications/antix/antiX-docs.desktop</icon>
+  <icon x="34" y="336" label="Install">/usr/share/applications/antix/antixsources.desktop</icon>
+</pinboard>
