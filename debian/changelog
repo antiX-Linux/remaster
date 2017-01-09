@@ -1,3 +1,9 @@
+remaster-antix (0.5.17) unstable; urgency=medium
+
+  * Fixed broken iso-snapshot by removing slim.conf from live-files/files/etc
+
+ -- anticapitalista <antix@operamail.com>  Mon, 09 Jan 2017 15:47:36 +0200
+
 remaster-antix (0.5.16) unstable; urgency=medium
 
   * New files to initrd and grub live folders
