@@ -1,0 +1,10 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Configure Persistence
+Comment=Configure Persistence
+Exec=gksu persist-config
+Icon=preferences-desktop
+Terminal=false
+Type=Application
+Categories=System;
+NoDisplay=False

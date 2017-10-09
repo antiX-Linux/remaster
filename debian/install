@@ -2,3 +2,7 @@ locale/*             usr/share/locale
 bin/*                usr/local/bin
 installed-to-live    usr/sbin
 live-files/*         usr/local/share/live-files
+persist-config.desktop 	usr/share/applications/antix
+persist_setup.desktop 	usr/share/applications/antix
+remaster.desktop 		usr/share/applications/antix
+persist_save.desktop 	usr/share/applications/antix

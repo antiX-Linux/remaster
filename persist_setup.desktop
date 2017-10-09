@@ -1,0 +1,11 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Set up Persistence
+Comment=Set up Persistence
+Exec=gksu persist-makefs
+Icon=palimpsest
+Terminal=false
+Type=Application
+Categories=System;
+NoDisplay=False
+

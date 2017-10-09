@@ -1,0 +1,11 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Save Persistence Changes
+Comment=Save filesystem changes when running persistence
+Exec=gksu persist-save
+Icon=palimpsest
+Terminal=false
+Type=Application
+Categories=System;
+NoDisplay=False
+
