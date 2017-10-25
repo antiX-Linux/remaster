@@ -1,3 +1,9 @@
+remaster-antix (0.6.1) unstable; urgency=medium
+
+  * further changes to installed-to-live related to localtime settings
+
+ -- anticapitalista <antix@operamail.com>  Fri, 20 Oct 2017 14:46:42 +0300
+
 remaster-antix (0.6.0) unstable; urgency=medium
 
   * changes to installed-to-live script to save live desktop files
