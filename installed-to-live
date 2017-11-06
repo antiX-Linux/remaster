@@ -447,30 +447,47 @@ do_repo() {
     bind_mount_template "$repo_dir"  "$BIND_ROOT" "$REAL_ROOT"
 }
 
+
+#------------------------------------------------------------------------------
+#
+#------------------------------------------------------------------------------
 do_timezone() {
     local conf_file=$1  work_dir=$2  tz=$3
 
     read_conf_file $conf_file
 
     local zone_file=$REAL_ROOT/usr/share/zoneinfo/$tz
+    local local_file=$REAL_ROOT/etc/localtime
+    local tz_file=$REAL_ROOT/etc/timezone
+
     if ! test -e "$zone_file"; then
         error "Invalid timezone: $tz"
+        return
+    fi
+
+    real_zone=$(readlink -f "$zone_file")
+    if ! test -f "$real_zone"; then
+        error "Invalid zoneinfo file: $real_zone"
+        return
+    fi
+
+    local orig_tz=$(cat $tz_file 2>/dev/null)
+
+    # If the timezone is already set to what we want then do nothing
+    if [ "$tz" = "$orig_tz" ]; then
         return
     fi
 
     local tz_dir=$work_dir/tz
     local etc_dir=$tz_dir/etc
     mkdir -p $etc_dir
+
+    # Always bindmount the timezone file (when needed)
     echo "$tz" > $etc_dir/timezone
 
-    local real_localtime=$REAL_ROOT/etc/localtime
-    if test -f $real_localtime; then
-        cp $(readlink -f $zone_file) $etc_dir/localtime
-
-    elif test -l $real_localtime; then
-        :
-    else
-        error "Could not file: $real_localtime"
+    # If localtime is a real file then do the bindmount trick
+    if ! test -L $local_file; then
+        cp $local_file $etc_dir/localtime
     fi
 
     bind_mount_template "$tz_dir"  "$BIND_ROOT" "$REAL_ROOT"
@@ -659,6 +676,11 @@ bind_mount_template() {
                 pretend rm -f "$orig"
             fi
         else
+            # Can't bind mount to a symlink
+            if test -L "$orig"; then
+                error "Won't bind mount symlink: $orig"
+                continue
+            fi
             # Normal files -- bind mount template file, mkdir and touch if needed
             touch_file "$targ" "$orig"
             is_mounted "$targ" && error "File $targ is already mounted"
@@ -883,6 +905,16 @@ read_conf_file() {
     . $conf_file
 
     return 0
+}
+
+make_real() {
+    local file=$1
+    test -L $file || return
+    local dest=$(readlink -f $file)
+    test -f "$dest" || return
+    local tmp=$(mktemp $file.XXXXXXXX)
+    cp $dest $tmp
+    mv $tmp $file
 }
 
 random_hex_32() {

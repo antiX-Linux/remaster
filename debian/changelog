@@ -1,3 +1,9 @@
+remaster-antix (0.6.2) unstable; urgency=medium
+
+  * Deal with /etc/localtime symlink
+
+ -- anticapitalista <antix@operamail.com>  Fri, 03 Nov 2017 20:10:22 +0200
+
 remaster-antix (0.6.1) unstable; urgency=medium
 
   * further changes to installed-to-live related to localtime settings
