@@ -1,7 +1,9 @@
 [Desktop Entry]
 Encoding=UTF-8
 Name=Configure Persistence
+Name[el]=Διαμόρφωση live persistence
 Comment=Configure Persistence
+Comment[el]=Διαμόρφωση live persistence
 Exec=gksu persist-config
 Icon=preferences-desktop
 Terminal=false

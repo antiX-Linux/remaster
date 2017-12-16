@@ -1,7 +1,9 @@
 [Desktop Entry]
 Encoding=UTF-8
 Name=Set up Persistence
+Name[el]=Ρύθμιση Persistence 
 Comment=Set up Persistence
+Comment[el]=Ρύθμιση Persistence 
 Exec=gksu persist-makefs
 Icon=palimpsest
 Terminal=false

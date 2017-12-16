@@ -1,7 +1,9 @@
 [Desktop Entry]
 Encoding=UTF-8
 Name=Save Persistence Changes
+Name[el]=Αποθήκευση Αλλαγών
 Comment=Save filesystem changes when running persistence
+Comment[el]=Αποθήκευση αλλαγών συστήματος αρχείων κατά την εκτέλεση persist
 Exec=gksu persist-save
 Icon=palimpsest
 Terminal=false

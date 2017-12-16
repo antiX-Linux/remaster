@@ -1,3 +1,15 @@
+remaster-antix (0.6.4) unstable; urgency=medium
+
+  * Updated Italian and French
+
+ -- anticapitalista <antix@operamail.com>  Tue, 28 Nov 2017 20:58:31 +0200
+
+remaster-antix (0.6.3) unstable; urgency=medium
+
+  * Updated translations
+
+ -- anticapitalista <antix@operamail.com>  Mon, 13 Nov 2017 20:00:23 +0200
+
 remaster-antix (0.6.2) unstable; urgency=medium
 
   * Deal with /etc/localtime symlink

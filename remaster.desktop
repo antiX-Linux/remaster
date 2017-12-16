@@ -1,7 +1,9 @@
 [Desktop Entry]
 Encoding=UTF-8
 Name=Remaster
+Name[el]=Remaster
 Comment=Remaster running live instance
+Comment[el]=Κλωνοποίηση του Live System
 Exec=gksu live-remaster
 Icon=preferences-desktop
 Terminal=false

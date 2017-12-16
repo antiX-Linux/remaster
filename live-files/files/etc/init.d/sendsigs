@@ -13,7 +13,7 @@ PATH=/sbin:/usr/sbin:/bin:/usr/bin
 
 . /lib/lsb/init-functions
 
-PROTECT_LIST="^(mount.|ntfs-3g|wpa_supplicant|udevd|systemd-udevd)"
+PROTECT_LIST="^(mount.|ntfs-3g|lowntfs-3g|wpa_supplicant|udevd|systemd-udevd)"
 
 # Make it possible to see who the misbehaving processes are
 report_unkillable() {
@@ -40,18 +40,16 @@ do_stop () {
 
 	OMITPIDS=
 
-    #pgrep  "$PROTECT_LIST"
     local pid
     for pid in $(pgrep "$PROTECT_LIST"); do
         OMITPIDS="$OMITPIDS${OMITPIDS:+ }-o $pid"
     done
 
 	for omitfile in /run/sendsigs.omit; do
-		if [ -e $omitfile ]; then
-			for pid in $(cat $omitfile); do
-				OMITPIDS="${OMITPIDS:+$OMITPIDS }-o $pid"
-			done
-		fi
+		[ -e $omitfile ] || continue
+		for pid in $(cat $omitfile); do
+			OMITPIDS="${OMITPIDS:+$OMITPIDS }-o $pid"
+		done
 	done
 
 	# Load sendsigs.omit.d/packagename files too, to make it
