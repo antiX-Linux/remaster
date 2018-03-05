@@ -1,9 +1,25 @@
 [Desktop Entry]
 Encoding=UTF-8
 Name=Remaster
+Name[am]=እንደገና መስሪያ
+Name[ca]=Remasteritza
+Name[de]=Remaster
 Name[el]=Remaster
+Name[fr]=Remastériser
+Name[it]=Rimasterizza
+Name[nl]=Remaster
+Name[pt]=Recompor o sistema
+Name[sv]=Remaster
 Comment=Remaster running live instance
+Comment[am]=በ ቀጥታ ሁኔታዎችን እንደገና መስሪያ እና ማስኬጃ
+Comment[ca]=Remasteritza quan funciona en autònom
+Comment[de]=Laufendes Live-System überarbeiten
 Comment[el]=Κλωνοποίηση του Live System
+Comment[fr]=Remastériser une session 'live'
+Comment[it]=Rielabora l'istanza della Live mentre è in esecuzione
+Comment[nl]=Remaster gedurende live instantie
+Comment[pt]=Permite alterar o sistema em execução ["live instance" / sistema-executável externo] (Remaster)
+Comment[sv]=Remaster live-sessionen du kör
 Exec=gksu live-remaster
 Icon=preferences-desktop
 Terminal=false

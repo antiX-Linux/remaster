@@ -1,9 +1,25 @@
 [Desktop Entry]
 Encoding=UTF-8
 Name=Configure Persistence
+Name[am]=የማያቋርጥ ማሰናጃ
+Name[ca]=Configura Persistència
+Name[de]=Konfiguration der dynamischen Dauerhaftigkeit
 Name[el]=Διαμόρφωση live persistence
+Name[fr]=Configurer la persistance
+Name[it]=Configura persistenza
+Name[nl]=Configureer Persistentie
+Name[pt]=Configurar a Persistência
+Name[sv]=Konfigurera Persistens
 Comment=Configure Persistence
+Comment[am]=ማሰናጃ መቀጠያ
+Comment[ca]=Configura Persistència
+Comment[de]=Konfiguration der dynamischen Dauerhaftigkeit
 Comment[el]=Διαμόρφωση live persistence
+Comment[fr]=Configurer la persistance
+Comment[it]=Configura la persistenza
+Comment[nl]=Configureer Persistentie
+Comment[pt]=Configurar a Persistência
+Comment[sv]=Konfigurera Persistens
 Exec=gksu persist-config
 Icon=preferences-desktop
 Terminal=false

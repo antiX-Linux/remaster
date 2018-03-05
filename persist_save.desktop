@@ -1,9 +1,25 @@
 [Desktop Entry]
 Encoding=UTF-8
 Name=Save Persistence Changes
+Name[am]=የማያቋርጥ ለውጥ
+Name[ca]=Desa els canvis a la persistència
+Name[de]=Änderungen bei der dynamischen Dauerhaftigkeit speichern
 Name[el]=Αποθήκευση Αλλαγών
+Name[fr]=Enregistrer les changements de la persistance
+Name[it]=Salva modifiche persistenti
+Name[nl]=Persistentie Wijzigingen Opslaan
+Name[pt]=Guardar Alterações à Persistência
+Name[sv]=Spara Persistens-ändringar
 Comment=Save filesystem changes when running persistence
+Comment[am]=የ ፋይል ስርአት ለውጦችን በማያቋርጥ ሲያስኬዱ ማስቀመጫ
+Comment[ca]=Desa els canvis al sistema de fitxers quan s'executa la persistència
+Comment[de]=Speichern von Änderungen im Dateisystem bei aktivierter Persistenz
 Comment[el]=Αποθήκευση αλλαγών συστήματος αρχείων κατά την εκτέλεση persist
+Comment[fr]=Enregistrer les changements du fichier système lors d'une session avec persistance
+Comment[it]=Salva le modifiche del filesystem, quando la persistenza è in esecuzione
+Comment[nl]=Bestandssysteemwijzigingen opslaan terwijl persistentie actief is
+Comment[pt]=Guarda as alterações introduzidas no sistema de ficheiros ao executar com a persistência activada
+Comment[sv]=Spara ändringar av filsystemet när persistens används
 Exec=gksu persist-save
 Icon=palimpsest
 Terminal=false

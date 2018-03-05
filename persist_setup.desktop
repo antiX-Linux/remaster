@@ -1,9 +1,25 @@
 [Desktop Entry]
 Encoding=UTF-8
 Name=Set up Persistence
+Name[am]=የማያቋርጥ ማሰናጃ
+Name[ca]=Paràmetres de Persistència
+Name[de]=Einrichten der Live-Persistenz
 Name[el]=Ρύθμιση Persistence 
+Name[fr]=Configurer la persistance
+Name[it]=Configura persistenza
+Name[nl]=Persistentie Instellen
+Name[pt]=Estabelecer Persistência
+Name[sv]=Sätt upp Persistens
 Comment=Set up Persistence
+Comment[am]=የማያቋርጥ ማሰናጃ
+Comment[ca]=Paràmetres de Persistència
+Comment[de]=Einrichten der Live-Persistenz
 Comment[el]=Ρύθμιση Persistence 
+Comment[fr]=Configurer la persistance
+Comment[it]=Configura la persistenza
+Comment[nl]=Persistentie Instellen
+Comment[pt]=Estabelecer a função Persistência
+Comment[sv]=Sätt upp Persistens
 Exec=gksu persist-makefs
 Icon=palimpsest
 Terminal=false
